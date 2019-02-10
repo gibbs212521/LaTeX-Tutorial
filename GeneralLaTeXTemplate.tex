@@ -1,0 +1,375 @@
+%		For public use only, fair use laws still apply
+%		A tutorial template created by Chad Gibbons
+
+
+
+
+%	I recommend for generic help the following website
+%	http://www.emerson.emory.edu/services/latex/latex_toc.html
+%	There are many good websites and forums for LaTeX
+%
+%	If you have a problem, google it. (ex. "How do I start my page numbers at a different number")
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					 													  %
+%					 													  %
+%					  ALWAYS BEGIN THE PROGRAM WITH								  %
+%					 													  %
+%						\documentclass{class_type}								  %
+%																		  %
+%		Different class types have different commands associated with them, similar to header files			  %
+%					 													  %
+%					 													  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					 													  %
+%					 													  %
+%				It is recommended to only use packages as you need them 						  %
+%					 													  %
+%	Different types of reports will consistently use specific packages; keep these in their respective templates		  %
+%					 													  %
+%					 													  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{babel}				%	Expands text mode
+\usepackage{csquotes}				%	Permits \enquote{quote}
+\usepackage{graphicx}				%	Permits \includegraphics[]{image}
+\usepackage{caption}				%	Permits the void caption \caption*{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			PREAMBLE
+
+
+\title{Introduction to \LaTeX{\textquotedblleft Lay Tech"}}		%note left quote command vs " = \textquotedblright
+\author{Author's Name}
+%\date{12/29/2018}					%	Set permanent date or use date section as additional text real estate on the title page.
+%\date{Sic et Non \\ Quid Faciendus Est}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%			DOCUMENT
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					 													  %
+%					 													  %
+%					  ALWAYS BEGIN THE DOCUMENT WITH								  %
+%					 													  %
+%							\begin{document}									  %
+%					 													  %
+%					 													  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\maketitle
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%														 %
+	%														 %
+	%		\hfill fills in the remaining spaces of the given line with spaces			 %
+	%														 %
+	%					\\ ends line           							 %
+	%														 %
+	%	Determine the number of "\hfill \\ " iterations in accord with the number of lines		 %
+	%				   within you abstract.							 %
+	%														 %
+	%														 %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hfill 
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill \\
+\hfill
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%														 %
+	%														 %
+	%		The primary purpose of an abstract is to give sufficient information		 %
+	%					on your report to inform 						 %
+	%		researchers, students, grant providers, corporate executives, professors,  	 %
+	%				professionals, or the audience of your intention			 %
+	%		whether or not either reading or purchasing your report is necessary.		 %
+	%														 %
+	%														 %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+\noindent The abstract text goes here.\\
+\hfill \\
+NOTE: Attention to comments and visual errors.\\
+\qquad \quad Some errors are purposely inserted with the method of correction \\
+\indent \qquad following it immediately.
+\end{abstract}
+
+\pagenumbering{gobble}
+
+\pagebreak
+
+
+\tableofcontents
+
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%														 %
+	%														 %
+	%		\pagenumbering{gobble}	"gobbles" or removes the pagination of the page  	 %
+	%					and the following pages.						 %
+	%														 %
+	%		\pagenumbering{num_style}	sets the pagination of the page and 	  	 %
+	%						the following pages						 %
+	%														 %
+	%						{num_style} List:						 %
+	%														 %
+	%				{roman} -> lowercase roman numerals           				 %
+	%				{Roman} -> uppercase roman numerals           				 %
+	%				{alph} -> lowercase alphabetical numerals           			 %
+	%				{Alph} -> uppercase alphabetical numerals           			 %
+	%				{arabic} -> standard decimal numerals (0-9)           			 %
+	%														 %
+	%			Altering \pagenumbering{} will restart the pagination at 1.			 %
+	%			     See other tutorial for greater control of paginations.			 %
+	%														 %
+	%														 %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pagenumbering{roman}
+
+\pagebreak
+
+
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%														 %
+	%														 %
+	%	The primary purpose of an introduction is to provide a fundamental  review		 %
+	%				of topics in your report to prepare 					 %
+	%		researchers, students, grant providers, corporate executives, professors,  	 %
+	%				professionals, or the audience of your intention			 %
+	%	with sufficient explanation that someone of appropriate technical knowledge		 %
+	%			would be able to comprehend the method and conclusion 			 %
+	%														 %
+	%														 %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Introduction}
+Here is the text of your introduction.
+
+\pagenumbering{arabic}
+
+						
+
+\begin{equation}
+    \label{simple_equation}
+    \alpha = \sqrt{ \beta }
+\end{equation}
+
+\hfill \\
+
+
+$$ \alpha \cdot \beta = \alpha^{1.5}_{subscript} $$		% NOTE: No equation number nor tie to any list
+
+%\text{test = } 
+test = $\int^\infty_{-\infty} $u(t)$ \cdot$ (- u(t-3))$ $dx
+\begin{center}
+The answer to what test is equal to is: $\int^3_0$ 1 dx\\
+test = 3
+\end{center}
+
+\subsection{Subsection Heading Here}
+Write your subsection text here.
+
+
+\subsection*{Subsection Heading Here \& NOT in TOC}
+
+TOC stands for Table of Contents. \\
+
+\noindent $\backslash$\& permits the writting of \& in text.\\
+\indent Notice also that there is no iterative numeration for any section, subsection, table, or figure that has the asterisk (*) infront of the call-command and the bracketed definition.
+
+
+% save an image in the same local file as the LaTeX file with the desired name (e.g. myfigure.jpg for below)
+
+%\begin{figure}[h!]
+   % \centering
+   % \includegraphics[width=3.0in]{myfigure}
+   % \caption{Simulation Results}
+   % \label{simulationfigure}
+%\end{figure}
+
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[size=0.75]{myfigure}
+%	\caption{size alteration example}
+%	\label{Label Location}
+%\end{figure}
+
+\section{Text vs Math Formating}
+
+The standard input mode is text input. \\
+\hfill \\
+
+The alternative input mode is math or symbol input. \\
+\hfill \\
+
+\noindent You may use inline equations by inserting the dollar sign in the same manner as quoting with quotation marks (`` ") \$ $\backslash$frac\{ numerator\}\{denominator\} \$ to create:  \\
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%														 %
+	%														 %
+	%					Special Note on Quotation Marks					 %
+	%														 %
+	%			   Standard Quotation Mark (") --> right quotation mark			 %
+	%			Double Reverse Accent Mark (``) --> left quotation mark	 		 %
+	%			left quotation mark = \textquotedblleft vs \textquotedblright 		 %
+	%														 %
+	%														 %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\indent \qquad \quad  $\frac{numerator}{denominator}$		%\qquad is a quintuplet space vs quad which is a quatruple space insert (5 vs 4 spaces :: \qquad vs \quad)
+
+
+\pagebreak
+
+\section{Table Tutorial}
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%														 %
+	%														 %
+	%					Special Note on Tables						 %
+	%														 %
+	%				   l = left, c = center, r = right alignment				 %
+	%			   | in tabular sets borders between alignment sets		 		 %
+	%	      \hline places a horizontal line across width of table above current the line  		 %
+	%			   \\ (the endline command) begins next line of table.		 		 %
+	%														 %
+	%														 %
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[h!]				% [h!] gives the table a set place in the document
+\caption{Ecce hoc titulum pro tabulo super illo!}
+\centering
+\begin{tabular}{ l | c | c | r | }
+left & center & center & right \\
+no left border & no top border & bottom border & right border \\ 
+\hline 
+no left & top & bottom & right \\
+\hline
+no left & top & no bottom & right \\
+
+
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h!]
+\begin{tabular}{| r | c | c | l |}
+\hline
+ left & top & bottom & right \\
+\hline
+right alignment & center alignment & center alignment & left alignment \\
+\hline
+&&&\\
+\hline
+\textbf{Species} & number in left group & number in right group & total number \\
+\hline
+dogs & 3 & 4 & 7 \\
+\hline
+cats & 54 & 36 & 90 \\
+\hline
+
+\end{tabular}
+\caption*{Ecce hoc titulum pro ipsum cum nulla numeris}
+\end{table}
+
+
+\begin{table}[h!]				% [h!] gives the table a set place in the document
+\centering
+\begin{tabular}{ l | c | c | r | }
+left & center & center & right \\
+no left border & no top border & bottom border & right border \\ 
+\hline 
+no left & top & bottom & right \\
+\hline
+no left & top & no bottom & right \\
+\end{tabular}
+\caption{Ecce hoc titulum pro tabulo sub illo!}
+\end{table}
+
+\pagebreak
+
+\section{Method}
+
+\section{Results}
+
+\section{Discussion}
+
+\section{Conclusion}
+Write your conclusion here.
+
+\pagebreak
+
+\section{Internal Figures \& Tables Reference Lists}
+
+\listoftables
+
+\listoffigures
+
+\section{References}
+
+\section{Table of Appendices}
+
+\section*{Appendix A}
+
+\section*{Appendix B}
+
+\end{document}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					 													  %
+%					 													  %
+%					  ALWAYS END THE DOCUMENT WITH								  %
+%					 													  %
+%							\end{document}									  %
+%					 													  %
+%					 													  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
