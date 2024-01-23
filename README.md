@@ -11,3 +11,12 @@ We all make reports, and some of us prefer to let our text documents do math for
 Even fewer of us prefer to let our text documents make pretty info-graphics for us.
 I want to help others increase our number.
 
+
+To Do List:
+.sty files
+javascript meets LaTeX
+TeX vs LaTeX
+Directories
+Functionalizing LaTeX
+Mathematics in LaTeX
+Automation in LaTeX
